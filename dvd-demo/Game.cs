@@ -5,28 +5,20 @@ using System.Numerics;
 // The namespace your code is in.
 namespace MohawkGame2D
 {
-    /// <summary>
-    ///     Your game code goes inside this class!
-    /// </summary>
     public class Game
     {
-        // Place your variables here:
-
-
-        /// <summary>
-        ///     Setup runs once before the game loop begins.
-        /// </summary>
+        DVD dvdA;
         public void Setup()
         {
+            Window.SetTitle("DVD Demo");
+            Window.SetSize(800, 600);
 
+            dvdA = new DVD();
+            dvdA.Setup();
         }
-
-        /// <summary>
-        ///     Update runs every frame.
-        /// </summary>
         public void Update()
         {
-
+            dvdA.Update();
         }
     }
 
